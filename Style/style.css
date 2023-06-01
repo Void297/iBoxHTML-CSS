@@ -1,1 +1,356 @@
+:root {
+  --warna-satu: #30ced0;
+  --warna-dua: #00a6b5;
+  --warna-tiga: #006af1;
+  --warna-empat: #0d5cab;
+  --warna-lima: #d3212d;
+  --warna-dark: #292929;
+  --warna-light: #f3f4f5;
+  --warna-satu-tr: #f4fbfb;
+  --warna-doc-satu: #30ced0;
+  --warna-doc-dua: #2ab3e8;
+  --warna-doc-tiga: #2ae8b6;
+  --warna-doc-empat: #c61f25;
+  --warna-gradient-satu: linear-gradient(180deg, #006af1, #0d5cab);
+  --warna-gradient-dua: linear-gradient(180deg, #0d5cab, #006af1);
+  --tmdbDarkBlue: 3, 37, 65;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --darkblue: rgba(3, 37, 65, 1);
+  --blue-dua: #093159;
+  --maxWidth: 1300px;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.15rem;
+  color: #fff;
+  width: 100%;
+  min-height: 3000px;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #f8f9fa;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar */
+
+header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+}
+
+header.navbar .navbar-container {
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .navbar-container .navbar-menu {
+  height: 100%;
+  padding: 0 4.3%;
+  margin: 0 39px;
+  box-sizing: border-box;
+}
+
+header.navbar .navbar-container .navbar-menu .navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header.navbar .navbar-container .navbar-menu .navbar-nav .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.navbar .navbar-container .navbar-menu .navbar-nav .navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+.navbar-nav .navbar-logo a {
+  height: 100%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.navbar-nav .navbar-logo a img {
+  height: 100%;
+}
+
+.navbar .navbar-container .navbar-menu .navbar-nav .nav-link {
+  color: #f8f9fa;
+  font-weight: 700;
+}
+
+.dropdown-content .item-list a {
+  font-weight: 200;
+  font-size: 14px;
+  color: #f8f9fa;
+}
+
+.navbar
+  .navbar-container
+  .navbar-menu
+  .navbar-nav
+  .navbar-items
+  .dropdown
+  .dropdown-content
+  a {
+  font-weight: 200;
+  font-size: 14px;
+  color: #f8f9fa;
+}
+
+.navbar
+  .navbar-container
+  .navbar-menu
+  .navbar-nav
+  .navbar-items
+  .dropdown
+  .dropdown-content
+  a:hover {
+  color: #ccc;
+}
+
+.navbar .navbar-container .navbar-menu .navbar-nav .navbar-items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* .dropdown {
+    position: relative;
+  } */
+
+.navbar-items .text-menu {
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.navbar-extra {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-extra .extra-menu {
+  position: relative;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.navbar
+  .navbar-container
+  .navbar-menu
+  .navbar-nav
+  .container
+  .navbar-items
+  a
+  .text-menu:hover {
+  background-color: #2e2e2e;
+  color: #979595;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2e2e2e;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.dropdown-content:nth-child(2) {
+  display: none;
+  position: absolute;
+  background-color: #2e2e2e;
+  min-width: 285px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 12px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .item-list {
+  padding: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2e2e2e;
+    min-width: 185px;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 25px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  } */
+
+.navbar-extra .dropdown {
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-extra .nav-link .extra-menu:hover {
+  background-color: #2e2e2e;
+  color: #979595;
+}
+
+.dropdown-menu input {
+  width: 200px;
+  padding: 6px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  width: 278px;
+  height: 52px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: #2e2e2e;
+  padding: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dropdown-menu .search-bar a {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 7px;
+}
+
+.search-bar input {
+  background-color: #454545;
+  border: none;
+  width: 250px;
+  padding: 4px;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #ccc; /* Ganti dengan warna yang diinginkan */
+}
+
+.navbar-extra .dropdown-content a {
+  position: absolute;
+  height: inherit;
+}
+
+.navbar-extra .dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  height: 91px;
+  padding: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.login-user {
+  padding: 12px;
+  height: 100%;
+}
+
+#user {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  height: 50px;
+  padding: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navbar-extra .dropdown-content p {
+  color: #f8f9fa;
+  font-weight: normal;
+  font-size: 0.875rem;
+  margin: 12px;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+
+.navbar-extra .dropdown-content div {
+  color: #f8f9fa;
+  font-weight: normal;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+/* Akhir Navbar */
